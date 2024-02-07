@@ -7,8 +7,32 @@ _Objective_:
 Perform and publish a custom EDA project to demnostrate skills with Jupyter, pandas, Seaborn and popular tools for data analytics. The notebook should tell a data story and visually present findings in a clear and engaging manner. 
 
 _Data Set_: Titanic passenger data set will be used for this project
+
+Here is an example of the data:
+survived	pclass	sex	age	sibsp	parch	fare	embarked	class	who	adult_male	deck	embark_town	alive	alone
+0	3	male	22.0	1	0	7.25	S	Third	man	    True		Southampton	no	False
+1	1	female	38.0	1	0	71.2833	C	First	woman	False	C	Cherbourg	yes	False
+1	3	female	26.0	0	0	7.925	S	Third	woman	False		Southampton	yes	True
+1	1	female	35.0	1	0	53.1	S	First	woman	False	C	Southampton	yes	False
+
+Data columns included as well as entries:
+Int64Index: 891 entries, 0 to 890
+Data columns (total 11 columns):
+survived    891 non-null int64
+pclass      891 non-null int64
+name        891 non-null object
+sex         891 non-null object
+age         714 non-null float64
+sibsp       891 non-null int64
+parch       891 non-null int64
+ticket      891 non-null object
+fare        891 non-null float64
+cabin       204 non-null object
+embarked    889 non-null object
+dtypes: float64(2), int64(4), object(5)
+
 ```shell
-https://github.com/mwaskom/seaborn-data/blob/master/titanic.csv
+(https://github.com/mwaskom/seaborn-data/blob/master/titanic.csv)
 ```
 
 # Environment Setup 
