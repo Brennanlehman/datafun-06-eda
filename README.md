@@ -16,18 +16,21 @@ Here is an example of the data:
 
 *Data columns included as well as entries:
 *Int64Index: 891 entries, 0 to 890
-Data columns (total 11 columns):
-|survived|----   891 |non-null |int64|
-|pclass|---      891 |non-null |int64|
-|name|---        891 |non-null |object|
-|sex|---         891 |non-null |object|
-|age|---         714 |non-null |float64|
-|sibsp|---       891 |non-null |int64|
-|parch|---       891 |non-null |int64|
-|ticket|---      891 |non-null |object|
-|fare|---        891 |non-null |float64|
-|cabin|---       204 |non-null |object|
-|embarked|---    889 |non-null |object|
+
+| Column   | Count | Non-null | Dtype   |
+|----------|-------|----------|---------|
+| survived | 891   | 891      | int64   |
+| pclass   | 891   | 891      | int64   |
+| name     | 891   | 891      | object  |
+| sex      | 891   | 891      | object  |
+| age      | 714   | 714      | float64 |
+| sibsp    | 891   | 891      | int64   |
+| parch    | 891   | 891      | int64   |
+| ticket   | 891   | 891      | object  |
+| fare     | 891   | 891      | float64 |
+| cabin    | 204   | 204      | object  |
+| embarked | 889   | 889      | object  |
+
 *dtypes: float64(2),|int64(4), object(5)
 
 
