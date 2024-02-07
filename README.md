@@ -6,7 +6,7 @@ Project 6 is an opportunity to create your own custom exploratory data analysis 
 _Objective_:
 Perform and publish a custom EDA project to demnostrate skills with Jupyter, pandas, Seaborn and popular tools for data analytics. The notebook should tell a data story and visually present findings in a clear and engaging manner. 
 
-_Data Set_: Titanic passenger data set will be used for this project
+_Data Set_: Titanic passenger data set will be used for this project. This dataset provides information about passengers on the Titanic, including whether they survived or not, their class (1st, 2nd, or 3rd), sex, age, the number of siblings/spouses aboard (sibsp), the number of parents/children aboard (parch), the ticket number, fare, cabin number, and the port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
 
 Here is an example of the data:
 |survived |	pclass|	sex	|age    |	sibsp	|parch	|fare	|embarked	|class	|who	|adult_male	|deck	     |embark_town	|
