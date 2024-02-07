@@ -9,9 +9,9 @@ Perform and publish a custom EDA project to demnostrate skills with Jupyter, pan
 _Data Set_: Titanic passenger data set will be used for this project
 
 Here is an example of the data:
-|survived|	pclass|	sex	|age|	sibsp	|parch	|fare	|embarked	|class	|who	|adult_male	|deck	|embark_town	|alive	|alone|
-|---------|--------|---|---|------|--------|------|-----------|--------|---_-----------|------|------------|-------|------|
-|0	| 3	| male	| 22.0	| 1	| 0	| 7.25	| S	| Third	| man   	    | True		| Southampton	| no	| False|
+|survived |	pclass|	sex	|age    |	sibsp	|parch	|fare	|embarked	|class	|who	|adult_male	|deck	     |embark_town	|
+|---------|-------|-----|-------|-----------|-------|-------|-----------|-------|-------|-----------|------------|--------------|
+|0	      |   3	  | male| 22.0	| 1          | 0	| 7.25	| S	        | Third	| man   | True		| Southampton| no	        | 
 
 
 Data columns included as well as entries:
