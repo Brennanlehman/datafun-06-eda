@@ -43,7 +43,7 @@ py -m pip install -r requirements.txt
 ni gitignore
 ```
 
-# How to Install and Run the Project
+# Install and Run the Project
 
 ## Add dependencies
 
