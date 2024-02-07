@@ -11,7 +11,7 @@ _Data Set_: Titanic passenger data set will be used for this project
 https://github.com/mwaskom/seaborn-data/blob/master/titanic.csv
 ```
 
-#Environment Setup 
+# Environment Setup 
 
 ## Start a new project repository in GitHub and then clone down to local machine. I leveraged VS Code clone functionality
 
