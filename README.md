@@ -1,6 +1,11 @@
 # datafun-06-eda
-Project 6 repository
+# Project 6 repository
 
+Overview:
+Project 6 is an opportunity to create your own custom exploratory data analysis (EDA) project using GitHub, Git, Jupyter, pandas, Seaborn and other popular data analytics tools.
+
+Objective:
+Perform and publish a custom EDA project to demnostrate skills with Jupyter, pandas, Seaborn and popular tools for data analytics. The notebook should tell a data story and visually present findings in a clear and engaging manner. 
 
 ## Start a new project repository in GitHub and then clone down to local machine. I leveraged VS Code clone functionality
 
