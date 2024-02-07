@@ -1,11 +1,17 @@
-# datafun-06-eda
-# Project 6 repository
+# Project 6 Exploratory Data Analysis
 
-Overview:
+_Overview_:
 Project 6 is an opportunity to create your own custom exploratory data analysis (EDA) project using GitHub, Git, Jupyter, pandas, Seaborn and other popular data analytics tools.
 
-Objective:
+_Objective_:
 Perform and publish a custom EDA project to demnostrate skills with Jupyter, pandas, Seaborn and popular tools for data analytics. The notebook should tell a data story and visually present findings in a clear and engaging manner. 
+
+_Data Set_: Titanic passenger data set will be used for this project
+```shell
+https://github.com/mwaskom/seaborn-data/blob/master/titanic.csv
+```
+
+#Environment Setup 
 
 ## Start a new project repository in GitHub and then clone down to local machine. I leveraged VS Code clone functionality
 
@@ -15,8 +21,11 @@ Perform and publish a custom EDA project to demnostrate skills with Jupyter, pan
 
 py -m venv .venv
 .venv\Scripts\Activate
-py -m pip install -r requirements.txt
+```
 
+## Create .gitignore file
+```shell
+ni .gitignore
 ```
 
 ## Add requirements folder
@@ -24,6 +33,7 @@ py -m pip install -r requirements.txt
 ```shell
 
 ni requirements.txt
+py -m pip install -r requirements.txt
 ```
 
 ## Add gitignore
@@ -33,7 +43,8 @@ ni requirements.txt
 ni gitignore
 ```
 
-## How to Install and Run the Project
+# How to Install and Run the Project
+
 ## Add dependencies
 
 ```shell
