@@ -8,6 +8,8 @@ Perform and publish a custom EDA project to demnostrate skills with Jupyter, pan
 
 _Data Set_: Titanic passenger data set will be used for this project. This dataset provides information about passengers on the Titanic, including whether they survived or not, their class (1st, 2nd, or 3rd), sex, age, the number of siblings/spouses aboard (sibsp), the number of parents/children aboard (parch), the ticket number, fare, cabin number, and the port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
 
+https://github.com/mwaskom/seaborn-data/blob/master/titanic.csv
+
 Here is an example of the data:
 |survived |	pclass|	sex	|age    |	sibsp	|parch	|fare	|embarked	|class	|who	|adult_male	|deck	     |embark_town	|
 |---------|-------|-----|-------|-----------|-------|-------|-----------|-------|-------|-----------|------------|--------------|
@@ -21,7 +23,6 @@ Here is an example of the data:
 |----------|-------|----------|---------|
 | survived | 891   | 891      | int64   |
 | pclass   | 891   | 891      | int64   |
-| name     | 891   | 891      | object  |
 | sex      | 891   | 891      | object  |
 | age      | 714   | 714      | float64 |
 | sibsp    | 891   | 891      | int64   |
@@ -33,8 +34,23 @@ Here is an example of the data:
 
 *dtypes: float64(2),|int64(4), object(5)
 
+| Variable  | Definition                              | Key                                              |
+|-----------|-----------------------------------------|--------------------------------------------------|
+| survived  | Survival                                | 0 = No, 1 = Yes                                  |
+| pclass    | Ticket class                            | 1 = 1st, 2 = 2nd, 3 = 3rd                        |
+| sex       | Sex                                     |                                                  |
+| age       | Age in years                            |                                                  |
+| sibsp     | # of siblings / spouses aboard         | the Titanic                                       |
+| parch     | # of parents / children aboard         | the Titanic                                       |
+| ticket    | Ticket number                           |                                                  |
+| fare      | Passenger fare                          |                                                  |
+| cabin     | Cabin number                            |                                                  |
+| embarked  | Port of Embarkation                     | C = Cherbourg, Q = Queenstown, S = Southampton    |
 
-https://github.com/mwaskom/seaborn-data/blob/master/titanic.csv
+
+#Dictionary source:
+https://www.kaggle.com/c/titanic/data
+
 
 # Environment Setup 
 
