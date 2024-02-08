@@ -38,9 +38,9 @@ https://github.com/mwaskom/seaborn-data/blob/master/titanic.csv
 
 # Environment Setup 
 
-## Start a new project repository in GitHub and then clone down to local machine. I leveraged VS Code clone functionality
+### Start a new project repository in GitHub and then clone down to local machine. I leveraged VS Code clone functionality
 
-## Create Virtual Environment
+### Create Virtual Environment
 
 ```shell
 
@@ -48,12 +48,12 @@ py -m venv .venv
 .venv\Scripts\Activate
 ```
 
-## Create .gitignore file
+### Create .gitignore file
 ```shell
 ni .gitignore
 ```
 
-## Add requirements folder
+### Add requirements folder
 
 ```shell
 
@@ -61,16 +61,16 @@ ni requirements.txt
 py -m pip install -r requirements.txt
 ```
 
-## Add gitignore
+### Add gitignore
 
 ```shell
 
 ni gitignore
 ```
 
-# Install and Run the Project
+# Install and Setup the Project
 
-## Add dependencies
+### Add dependencies
 
 ```shell
 
@@ -83,14 +83,14 @@ py -m pip install seaborn
 py -m pip install scipy
 ```
 
-## Freeze dependencies
+### Freeze dependencies
 
 ```shell
 
 py -m pip freeze > requirements.txt
 ```
 
-## Git add and commit 
+### Git add and commit 
 
 ```shell
 git add .
@@ -100,7 +100,7 @@ git push origin main
 
 # Start Project
 
-## Step 1. Add juypter file
+### Step 1. Add juypter file
 1. Create the Notebook: In the VS Code Explorer, create a new file i.e., yourname_eda.ipynb. Ensure it has a .ipynb extension.
 2. Verify your new notebook is open for editing. If needed, view the project files in VS Code Explorer and double-click the notebook file to open it for editing.
 3. Add a Markdown cell at the top of your notebook with the introduction (include the title, author, date and the purpose of the project).
@@ -117,7 +117,7 @@ import pandas as pd
 import seaborn as sns
 ```
 
-#### Step 3. Data Acquisition
+### Step 3. Data Acquisition
 
 Load the data into a pandas DataFrame.
 Use the pd read functions such as pd.read_csv() or pd.read_excel() as appropriate.
@@ -133,7 +133,7 @@ df = sns.load_dataset('titanic')
 print(df.head())
 ```
 
-#### Step 4. Initial Data Inspection
+### Step 4. Initial Data Inspection
 
 Display the first 10 rows of the DataFrame, check the shape, and display the data types of each column using df.head(10), df.shape, and df.dtypes.
 
@@ -145,7 +145,7 @@ print(df.head(10))
 print(df.shape)
 print(df.dtypes)
 ```
-#### Step 5. Initial Descriptive Statistics
+### Step 5. Initial Descriptive Statistics
 
 Use the DataFrame describe() method to display summary statistics for each column.
 
@@ -155,7 +155,7 @@ Jupyter Notebook / Python cell example:
 print(df.describe())
 ```
 
-#### Step 6. Initial Data Distribution for Numerical Columns
+### Step 6. Initial Data Distribution for Numerical Columns
 
 Choose a numerical column and use df['column_name'].hist() to plot a histogram for that specific column.
 To show all the histograms for all numerical columns, use df.hist().
@@ -174,7 +174,7 @@ plt.show()
 ```
 Afterwards, use a Markdown cell to document your observations.
 
-#### Step 7. Initial Data Distribution for Categorical Columns
+### Step 7. 
 
 Choose a categorical column and use df['column_name'].value_counts() to display the count of each category.
 Use a loop to show the value counts for **all** categorical columns.
