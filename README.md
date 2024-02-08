@@ -10,11 +10,6 @@ _Data Set_: Titanic passenger data set will be used for this project. This datas
 
 https://github.com/mwaskom/seaborn-data/blob/master/titanic.csv
 
-Here is an example of the data:
-|survived |	pclass|	sex	|age    |	sibsp	|parch	|fare	|embarked	|class	|who	|adult_male	|deck	     |embark_town	|
-|---------|-------|-----|-------|-----------|-------|-------|-----------|-------|-------|-----------|------------|--------------|
-|0	      |   3	  | male| 22.0	| 1         | 0	    | 7.25	| S	        | Third	| man   | True		| Southampton| no	        | 
-
 
 *Data columns included as well as entries:
 *Int64Index: 891 entries, 0 to 890
@@ -34,19 +29,25 @@ Here is an example of the data:
 
 *dtypes: float64(2),|int64(4), object(5)
 
-| Variable  | Definition                              | Key                                              |
-|-----------|-----------------------------------------|--------------------------------------------------|
-| survived  | Survival                                | 0 = No, 1 = Yes                                  |
-| pclass    | Ticket class                            | 1 = 1st, 2 = 2nd, 3 = 3rd                        |
-| sex       | Sex                                     |                                                  |
-| age       | Age in years                            |                                                  |
-| sibsp     | # of siblings / spouses aboard         | the Titanic                                       |
-| parch     | # of parents / children aboard         | the Titanic                                       |
-| ticket    | Ticket number                           |                                                  |
-| fare      | Passenger fare                          |                                                  |
-| cabin     | Cabin number                            |                                                  |
-| embarked  | Port of Embarkation                     | C = Cherbourg, Q = Queenstown, S = Southampton    |
-
+| Variable   | Definition                              | Key                                              |
+|------------|-----------------------------------------|--------------------------------------------------|
+| survived   | Survival                                | 0 = No, 1 = Yes                                  |
+| pclass     | Ticket class                            | 1 = 1st, 2 = 2nd, 3 = 3rd                        |
+| sex        | Sex                                     |                                                  |
+| age        | Age in years                            |                                                  |
+| sibsp      | # of siblings / spouses aboard          | the Titanic                                      |
+| parch      | # of parents / children aboard          | the Titanic                                      |
+| ticket     | Ticket number                           |                                                  |
+| fare       | Passenger fare                          |                                                  |
+| cabin      | Cabin number                            |                                                  |
+| embarked   | Port of Embarkation                     | C = Cherbourg, Q = Queenstown, S = Southampton   |
+| class      | 1st, 2nd, 3rd                           |                                                  |
+| who        | man, woman, child                       |                                                  |
+| adult_male |                                         | True or False                                    |
+| deck       |                                         |                                                  |
+| embark_town|                                         | Cherbourg, Queenstown, Southampton               |
+| alive      |                                         | no or yes                                        |
+| alone      |                                         | True or false                                    |
 
 #Dictionary source:
 https://www.kaggle.com/c/titanic/data
