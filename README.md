@@ -97,3 +97,100 @@ git add .
 git commit -m "add .gitignore, cmds to readme"
 git push origin main
 ```
+
+# Start Project
+
+## Step 1. Add juypter file
+1. Create the Notebook: In the VS Code Explorer, create a new file i.e., yourname_eda.ipynb. Ensure it has a .ipynb extension.
+2. Verify your new notebook is open for editing. If needed, view the project files in VS Code Explorer and double-click the notebook file to open it for editing.
+3. Add a Markdown cell at the top of your notebook with the introduction (include the title, author, date and the purpose of the project).
+
+```shell
+ni blehman_eda.ipynb
+```
+
+### Step 2. Import Dependencies (At the Top, After the Introduction)
+
+```python
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+```
+
+#### Step 3. Data Acquisition
+
+Load the data into a pandas DataFrame.
+Use the pd read functions such as pd.read_csv() or pd.read_excel() as appropriate.
+To read from the Seaborn dataset, we'll use sns.load_dataset() function and pass in the 'titanic' to populate our DataFrame.
+
+Jupyter Notebook / Python cell example:
+
+```python
+# Load the dataset into a pandas DataFrame 
+df = sns.load_dataset('titanic')
+
+# Inspect first rows of the DataFrame
+print(df.head())
+```
+
+#### Step 4. Initial Data Inspection
+
+Display the first 10 rows of the DataFrame, check the shape, and display the data types of each column using df.head(10), df.shape, and df.dtypes.
+
+Jupyter Notebook / Python cell example:
+
+```python
+
+print(df.head(10))
+print(df.shape)
+print(df.dtypes)
+```
+#### Step 5. Initial Descriptive Statistics
+
+Use the DataFrame describe() method to display summary statistics for each column.
+
+Jupyter Notebook / Python cell example:
+
+```python
+print(df.describe())
+```
+
+#### Step 6. Initial Data Distribution for Numerical Columns
+
+Choose a numerical column and use df['column_name'].hist() to plot a histogram for that specific column.
+To show all the histograms for all numerical columns, use df.hist().
+
+Jupyter Notebook / Python cell example:
+
+```python
+# Inspect histogram by numerical column
+df['sepal_length'].hist()
+
+# Inspect histograms for all numerical columns
+df.hist()
+
+# Show all plots
+plt.show()
+```
+Afterwards, use a Markdown cell to document your observations.
+
+#### Step 7. Initial Data Distribution for Categorical Columns
+
+Choose a categorical column and use df['column_name'].value_counts() to display the count of each category.
+Use a loop to show the value counts for **all** categorical columns.
+
+Jupyter Notebook / Python cell example:
+
+```python
+# Inspect value counts by categorical column
+df['species'].value_counts()
+
+# Inspect value counts for all categorical columns
+for col in df.select_dtypes(include=['object', 'category']).columns:
+    # Display count plot
+    sns.countplot(x=col, data=df)
+    plt.title(f'Distribution of {col}')
+    plt.show()
+
+# Show all plots
+plt.show()
