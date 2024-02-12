@@ -181,10 +181,16 @@ Jupyter Notebook / Python cell example:
 
 ```python
 # Inspect histogram by numerical column
-df['sepal_length'].hist()
+df['survived'].hist()
+plt.xlabel('Survival (0 = No, 1 = Yes)')
+plt.ylabel('Frequency')
+plt.title('Distribution of Survival')
 
 # Inspect histograms for all numerical columns
 df.hist()
+
+# Function to help with not overlapping of subplots
+plt.tight_layout()
 
 # Show all plots
 plt.show()
@@ -199,8 +205,10 @@ Use a loop to show the value counts for **all** categorical columns.
 Jupyter Notebook / Python cell example:
 
 ```python
+# Initial Data Distribution for Categorical Columns
+
 # Inspect value counts by categorical column
-df['species'].value_counts()
+df['who'].value_counts()
 
 # Inspect value counts for all categorical columns
 for col in df.select_dtypes(include=['object', 'category']).columns:
@@ -211,3 +219,70 @@ for col in df.select_dtypes(include=['object', 'category']).columns:
 
 # Show all plots
 plt.show()
+```
+
+## Data transformation
+
+### Renaming column
+
+```python
+def rename_column(df, old_column, new_column):
+    df = df.rename(columns={old_column: new_column})
+    return df
+
+# Rename the 'sibsp' column to 'siblings_spouses_aboard'
+df = rename_column(df, 'sibsp', 'siblings_spouses_aboard')
+
+print(df.dtypes)
+```
+### Inserting a column
+
+```python 
+# Insert a new column
+
+# Insert a new column 'new_column' with dummy values
+df['first_time_passenger'] = 'yes'
+
+# Print the DataFrame to verify the new column
+print(df.head())
+```
+
+## Initial Visualizations
+
+```python
+# Barplot of Survival by Passenger Class
+sns.barplot(x="pclass", y="survived", data=df);
+```
+
+```python
+# Barplot of Survival by Passenger Class
+sns.barplot(x="sex", y="survived", data=df);
+```
+
+```python
+# Define age categories 
+bins = [0, 18, 30, 50, 100]
+labels = ['0-18', '19-30', '31-50', '51+']
+
+# Create a pie chart
+plt.pie(age_counts, labels=age_counts.index, autopct='%1.1f%%', startangle=90, colors=plt.cm.Paired.colors)
+plt.title('Age Distribution in Titanic Dataset')
+plt.show()
+```
+```python
+# Set up the Seaborn style
+sns.set(style="whitegrid")
+
+# Create a scatter plot with hue encoding for passenger class and survival status
+plt.figure(figsize=(12, 8))
+scatter_plot = sns.scatterplot(x='age', y='survived', hue='pclass', data=df_age_notnull, palette='viridis', alpha=1)
+
+# Customize the plot
+plt.title('Age vs. Survival by Passenger Class')
+plt.xlabel('Age')
+plt.ylabel('Survived (0 = No, 1 = Yes)')
+plt.legend(title='Passenger Class')
+
+# Show the plot
+plt.show()
+```
